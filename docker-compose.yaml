@@ -5,6 +5,7 @@ services:
     build: .
     container_name: mqtt-volume-control
     restart: unless-stopped
+    hostname: garage-audio-mqtt-volume
     devices:
       - "/dev/snd:/dev/snd"  # Required for ALSA audio control
     volumes:
